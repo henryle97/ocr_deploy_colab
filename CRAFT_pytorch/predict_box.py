@@ -45,12 +45,6 @@ class CraftDetection:
             pr.poly = True
 
     def text_detect(self, image, have_cmnd=True):
-        # if not os.path.exists(image_path):
-        #     print("Not exists path")
-        #     return []
-        # image = imgproc.loadImage(image_path)       # numpy array img (RGB order)
-        # image = cv2.imread()
-
         time0 = time.time()
 
         # resize
@@ -150,7 +144,7 @@ class CraftDetection:
         y_max_base = boxes[0][3]    # y_max
         i = 0
         for box in boxes:
-            if box[1] <= y_max_base:  # y_min <= y_max_base
+            if box[1] + 0.5 * abs(box[3] - box[1]) <= y_max_base:  # y_min <= y_max_base
                 lines[i].append(box)
             else:
                 lines[i] = sorted(lines[i], key=lambda x: x[0])
