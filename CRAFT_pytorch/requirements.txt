@@ -1,0 +1,14 @@
+Flask==1.1.2
+h5py==2.8.0
+imageio==2.9.0
+matplotlib==3.3.0
+numpy==1.18.5
+opencv-python-headless==4.4.0.44
+pandas==1.1.1
+Pillow
+requests==2.24.0
+scikit-image==0.17.2
+scikit-learn==0.23.1
+torch==1.4.0                    #https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp37-cp37m-linux_x86_64.whl
+torchvision==0.5.0
+tqdm==4.48.0
