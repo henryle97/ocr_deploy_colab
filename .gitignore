@@ -1,2 +1,13 @@
 weights/*.pth
 image/*
+
+
+BOX_MODEL/models/networks/DCNv2/.vscode
+BOX_MODEL/models/networks/DCNv2/.idea
+BOX_MODEL/models/networks/DCNv2/*.so
+BOX_MODEL/models/networks/DCNv2/*.o
+BOX_MODEL/models/networks/DCNv2/*pyc
+BOX_MODEL/models/networks/DCNv2/_ext
+BOX_MODEL/models/networks/DCNv2/build
+BOX_MODEL/models/networks/DCNv2/DCNv2.egg-info
+BOX_MODEL/models/networks/DCNv2/dist
